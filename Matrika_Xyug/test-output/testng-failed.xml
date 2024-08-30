@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SignupModuleTest.LoginPageTest">
+      <class name="com.ProductSelectTest.NoisePinTest">
         <methods>
-          <include name="test_CancleButtonIsClickable"/>
-          <include name="test_YesButtonIsClickable"/>
-          <include name="test_LogutButtonIsClickable"/>
+          <include name="test_BuyTheProductWithGiftCardAndCoupons"/>
           <include name="SetBrowser"/>
         </methods>
-      </class> <!-- com.SignupModuleTest.LoginPageTest -->
+      </class> <!-- com.ProductSelectTest.NoisePinTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

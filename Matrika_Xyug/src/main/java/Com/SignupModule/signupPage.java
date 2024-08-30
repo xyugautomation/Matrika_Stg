@@ -300,20 +300,40 @@ public class signupPage {
 		Thread.sleep(2000);
 		signupButton.click();
 		Thread.sleep(2000);
+		// Check and clear invalid data in Name field
+		if (!EnterName.getAttribute("value").matches("[A-Za-z]+")) {
+			EnterName.clear();
+			System.out.println("Invalid data in Name field cleared.");
+		}
 		EnterName.sendKeys("Shiv");
+
+		// Check and clear invalid data in Email field
 		Thread.sleep(2000);
+		if (!EnterMailID.getAttribute("value").matches("^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$")) {
+			EnterMailID.clear();
+			System.out.println("Invalid data in Email field cleared.");
+		}
 		EnterMailID.sendKeys("Shiv.xyug@gmail.com");
+
+		// Check and clear invalid data in Mobile Number field
 		Thread.sleep(2000);
+		if (!EnterMobileNumber.getAttribute("value").matches("\\d{10}")) {
+			EnterMobileNumber.clear();
+			System.out.println("Invalid data in Mobile Number field cleared.");
+		}
 		EnterMobileNumber.sendKeys("6309631698");
 		Thread.sleep(2000);
-		ClickCheckBox.click();
+		// ClickCheckBox.click();
 		CreateAccountButton.click();
 		Thread.sleep(2000);
+		// Check if already registered number is displayed
 		if (AlreadyRegisterNumber.isDisplayed()) {
 			LoginButton.click();
 			Thread.sleep(2000);
+			EnterMobileNumberlogin.clear(); // Clear the login mobile number field before entering new data
 			EnterMobileNumberlogin.sendKeys("6309631698");
 			continueButton.click();
+			// Simulate OTP input
 			Thread.sleep(2000);
 			OTP1.sendKeys("1");
 			OTP2.sendKeys("2");
@@ -322,9 +342,42 @@ public class signupPage {
 			OTP5.sendKeys("5");
 			OTP6.sendKeys("6");
 		} else {
-			System.out.println("Please signup with new mobile number..");
+			System.out.println("Please signup with a new mobile number.");
 
 		}
+
+//		
+//		Thread.sleep(2000);
+//		AccountButton.click();
+//		Thread.sleep(2000);
+//		signupButton.click();
+//		Thread.sleep(2000);
+//		
+//		EnterName.sendKeys("Shiv");
+//		Thread.sleep(2000);
+//		EnterMailID.sendKeys("Shiv.xyug@gmail.com");
+//		Thread.sleep(2000);
+//		EnterMobileNumber.sendKeys("6309631698");
+//		Thread.sleep(2000);
+//		ClickCheckBox.click();
+//		CreateAccountButton.click();
+//		Thread.sleep(2000);
+//		if (AlreadyRegisterNumber.isDisplayed()) {
+//			LoginButton.click();
+//			Thread.sleep(2000);
+//			EnterMobileNumberlogin.sendKeys("6309631698");
+//			continueButton.click();
+//			Thread.sleep(2000);
+//			OTP1.sendKeys("1");
+//			OTP2.sendKeys("2");
+//			OTP3.sendKeys("3");
+//			OTP4.sendKeys("4");
+//			OTP5.sendKeys("5");
+//			OTP6.sendKeys("6");
+//		} else {
+//			System.out.println("Please signup with new mobile number..");
+//
+//		}
 
 	}
 
@@ -352,6 +405,7 @@ public class signupPage {
 				"Error message for invalid mobile number should be displayed");
 		ClickCheckBox.click();
 		CreateAccountButton.click();
+
 	}
 
 	public void InValidOTP() {
