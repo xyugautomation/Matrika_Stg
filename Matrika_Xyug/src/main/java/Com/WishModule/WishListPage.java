@@ -56,6 +56,25 @@ public class WishListPage {
 	}
 	
 	
+	public void WishButtonIsClickable() throws InterruptedException {
+
+		Thread.sleep(3000);
+		// Check if the wishlist button is enabled (clickable)
+		boolean wishButtonClickable = wishlistButton.isEnabled();
+
+		if (wishButtonClickable) {
+			System.out.println("Wishlist button is clickable.");
+			// You can add the action to click the button here if needed
+			wishlistButton.click();
+		} else {
+			System.out.println("Wishlist button is not clickable.");
+		}
+	}
+
+	
+	
+	
+	
 	
 	
 }

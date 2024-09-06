@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.GiftCardModuleTest.GiftcardBuyTest">
+        <methods>
+          <include name="test_GiftCard_BuyWithRazorPay"/>
+          <include name="SetBrowser"/>
+        </methods>
+      </class> <!-- com.GiftCardModuleTest.GiftcardBuyTest -->
+      <class name="com.SignupModuleTest.SelectPageTest">
+        <methods>
+          <include name="Test_SelectCat"/>
+          <include name="SetBrowser"/>
+        </methods>
+      </class> <!-- com.SignupModuleTest.SelectPageTest -->
+      <class name="com.SignupModuleTest.LoginPageTest">
+        <methods>
+          <include name="test_PhoneNumberIsDisplay"/>
+          <include name="test_LoginText_Display"/>
+          <include name="test_ContinuButtonDisplay"/>
+          <include name="test_EnterInvalidData"/>
+          <include name="test_isTextDisplayToEnjoyASeamlessShoppingExperience"/>
+          <include name="test_Enter_MobileNumber"/>
+          <include name="Test_EnterWithoutRegisterMobileNumber"/>
+          <include name="SetBrowser"/>
+          <include name="test_Without_Enter_Mob"/>
+          <include name="Test_AlreadyRegisterUserButAccountDeleted"/>
+        </methods>
+      </class> <!-- com.SignupModuleTest.LoginPageTest -->
+      <class name="com.ProductSelectTest.NoisePinTest">
+        <methods>
+          <include name="test_BuyTheProductWithGiftCardAndCoupons"/>
+          <include name="SetBrowser"/>
+        </methods>
+      </class> <!-- com.ProductSelectTest.NoisePinTest -->
+      <class name="com.HomeModuleTest.HomePageTest">
+        <methods>
+          <include name="test_AccountButtonIsDisplay"/>
+          <include name="test_Matrkia_LogoIsDisplay"/>
+          <include name="test_WishListButtonIsDisplay"/>
+          <include name="test_GoldSikka_LogoIsDisplay"/>
+          <include name="test_carttButtonIsDisplay"/>
+        </methods>
+      </class> <!-- com.HomeModuleTest.HomePageTest -->
+      <class name="com.SignupModuleTest.SignupPageTest">
+        <methods>
+          <include name="test_Enter_valid_signup_Data"/>
+          <include name="SetBrowser"/>
+        </methods>
+      </class> <!-- com.SignupModuleTest.SignupPageTest -->
+      <class name="com.SignupModuleTest.MatrikaSignupTest">
+        <methods>
+          <include name="testMatrikaSignupWithOtp"/>
+        </methods>
+      </class> <!-- com.SignupModuleTest.MatrikaSignupTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

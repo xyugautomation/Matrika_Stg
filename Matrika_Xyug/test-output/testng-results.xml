@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-30T14:19:50 IST" name="Default suite" finished-at="2024-08-30T14:20:15 IST" duration-ms="25420">
+  <suite started-at="2024-09-06T12:35:18 IST" name="Default suite" finished-at="2024-09-06T12:36:36 IST" duration-ms="77681">
     <groups>
     </groups>
-    <test started-at="2024-08-30T14:19:50 IST" name="Default test" finished-at="2024-08-30T14:20:15 IST" duration-ms="25420">
-      <class name="com.WishCartModuleTest.wishlistPageTest">
-        <test-method signature="setup()[pri:0, instance:com.WishCartModuleTest.wishlistPageTest@27406a17]" started-at="2024-08-30T14:19:50 IST" name="setup" finished-at="2024-08-30T14:20:02 IST" duration-ms="12066" status="PASS">
+    <test started-at="2024-09-06T12:35:18 IST" name="Default test" finished-at="2024-09-06T12:36:36 IST" duration-ms="77681">
+      <class name="com.HomeModuleTest.HomePageTest">
+        <test-method signature="setup()[pri:0, instance:com.HomeModuleTest.HomePageTest@27406a17]" started-at="2024-09-06T12:35:18 IST" name="setup" finished-at="2024-09-06T12:36:07 IST" duration-ms="48527" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_ProductIsDisplayOrNot()[pri:0, instance:com.WishCartModuleTest.wishlistPageTest@27406a17]" started-at="2024-08-30T14:20:02 IST" name="test_ProductIsDisplayOrNot" finished-at="2024-08-30T14:20:15 IST" duration-ms="13305" status="PASS">
+        <test-method signature="test_FestiveAndBridesJewelleryTextDisplayOrNot()[pri:31, instance:com.HomeModuleTest.HomePageTest@27406a17]" started-at="2024-09-06T12:36:07 IST" name="test_FestiveAndBridesJewelleryTextDisplayOrNot" finished-at="2024-09-06T12:36:36 IST" duration-ms="28512" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_ProductIsDisplayOrNot -->
-      </class> <!-- com.WishCartModuleTest.wishlistPageTest -->
+        </test-method> <!-- test_FestiveAndBridesJewelleryTextDisplayOrNot -->
+      </class> <!-- com.HomeModuleTest.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
