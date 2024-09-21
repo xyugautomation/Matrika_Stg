@@ -20,6 +20,11 @@ public class Select11 {
 	@FindBy(xpath="//img[@alt='No Product']")
 	public WebElement NoProduct;
 	
+	@FindBy(xpath="//img[@class='matrika-logo']")
+	public WebElement MatrikaLogo;
+	
+	
+	
 	/*Nose Pins
 ATM
 Mangalasutaram
@@ -52,6 +57,10 @@ Bangles
     
     
 	public void SearchDropDownButtonisClickable(WebDriver driver) throws InterruptedException {
+		Thread.sleep(2000);
+		MatrikaLogo.click();
+		Thread.sleep(2000);
+		
 //        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 //
 //       
@@ -115,29 +124,34 @@ Bangles
 //    }
 
 		
-		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-	        wait.until(ExpectedConditions.visibilityOf(selectCategory));
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(selectCategory));
 
-	        // Create a Select object for the dropdown
-	        Select select = new Select(selectCategory);
+		// Create a Select object for the dropdown
+		Select select = new Select(selectCategory);
 
-	        // Get all options from the dropdown
-	        List<WebElement> allOptions = select.getOptions();
+		// Get all options from the dropdown
+		List<WebElement> allOptions = select.getOptions();
 
-	        System.out.println("All Category Names:");
-	        for (WebElement option : allOptions) {
-	            String categoryName = option.getText();
-	            System.out.println(categoryName);
+		System.out.println("All Category Names:");
+		for (WebElement option : allOptions) {
+			String categoryName = option.getText();
+			System.out.println(categoryName);
+		}
+
+		
+	    if (allOptions.equals("Nose Pins")) {
+	        if (!selectCategory.isEnabled()) {
+	            System.out.println("Dropdown is disabled after selecting Nose Pins.");
+	        } else {
+	            System.out.println("Dropdown is still enabled.");
 	        }
-	   
-	
-	
-	
-	
-	
-	
-	}
+	    }
 
+		
+		
+		
+	}
 		
 		
 		

@@ -1,5 +1,7 @@
 package com.HomeModuleTest;
 
+import java.io.IOException;
+
 import org.testng.annotations.Test;
 
 import com.SignupModuleTest.BaseTest;
@@ -20,7 +22,7 @@ public class HomePageTest extends BaseTest {
 //
 //	@Test(priority = 2)
 //
-//	public void test_GoldSikka_LogoIsDisplay() throws InterruptedException {
+//	public void test_GoldSikka_LogoIsDisplay() throws InterruptedException, IOException {
 //		HomePage HP = new HomePage(driver);
 //		HP.GoldSikkaLogo();
 //
@@ -300,13 +302,13 @@ public class HomePageTest extends BaseTest {
 //
 //	}
 
-	@Test(priority = 31)
-	public void test_FestiveAndBridesJewelleryTextDisplayOrNot() throws InterruptedException {
-		HomePage HP = new HomePage(driver);
-		HP.FestiveAndBridesJewelleryTextDisplayOrNot(driver);
-
-	}
-
+//	@Test(priority = 31)
+//	public void test_FestiveAndBridesJewelleryTextDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		HP.FestiveAndBridesJewelleryTextDisplayOrNot(driver);
+//
+//	}
+//
 //	@Test(priority = 32)
 //	public void test_DealsOfTheDayTextDisplayOrNot() throws InterruptedException {
 //		HomePage HP = new HomePage(driver);
@@ -374,5 +376,124 @@ public class HomePageTest extends BaseTest {
 //		HomePage HP = new HomePage(driver);
 //		HP.xyugTechnologies(driver);
 //	}
+//
+//	
+//	
+//	@Test(priority = 21)
+//	public void test_FacebookLogoIsdisplayorNot() throws InterruptedException, IOException {
+//		HomePage HP = new HomePage(driver);
+//		HP.FacebookLogoisDisplayorNot(driver);
+//
+//	}
+//
+//	@Test(priority = 22)
+//	public void test_InstragramLogoIsdisplayorNot() throws InterruptedException, IOException {
+//		HomePage HP = new HomePage(driver);
+//		HP.InstragramLogoisDisplayorNot(driver);
+//
+//	}
+//
+//	@Test(priority = 23)
+//	public void test_youTubeLogoIsdisplayorNot() throws InterruptedException, IOException {
+//		HomePage HP = new HomePage(driver);
+//		HP.youTubeLogoisDisplayorNot(driver);
+//
+//	}
+//
+//	@Test(priority = 24)
+//	public void test_linkedinLogoIsdisplayorNot() throws InterruptedException, IOException {
+//		HomePage HP = new HomePage(driver);
+//		HP.linkedinLogoisDisplayorNot(driver);
+//	}
+//
+//	@Test(priority = 25)
+//	public void test_TwitterLogoIsdisplayorNot() throws InterruptedException, IOException {
+//		HomePage HP = new HomePage(driver);
+//		HP.TwitterLogoisDisplayorNot(driver);
+//	}
+//
+//	@Test(priority = 26)
+//	public void test_pinterestLogoIsdisplayorNot() throws InterruptedException, IOException {
+//		HomePage HP = new HomePage(driver);
+//		HP.pinterestLogoisDisplayorNot(driver);
+//	}
+//	
+//	@Test(priority = 20)
+//	public void test_MatrikaCollectionsText() throws InterruptedException, IOException {
+//		
+//		HomePage HP = new HomePage(driver);
+//		HP.MatrikaCollectionsText(driver);
+//		
+//		
+//	}
+//	
+//	@Test(priority=21)
+//	public void test_NosePinTextIsDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		HP.NosePinTextIsDisplayOrNot(driver);
+//	}
+//
+//	@Test(priority=22)
+//	public void test_ATMTextIsDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		HP.ATMTextIsDisplayOrNot(driver);
+//	}
+//	@Test(priority=23)
+//	public void test_MangalasutaramTextIsDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		HP.MangalasutaramTextIsDisplayOrNot(driver);
+//		
+//	}
+//	@Test(priority=24)
+//	public void test_LocketsTextIsDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		
+//		HP.LocketsTextIsDisplayOrNot(driver);
+//	}
+//	@Test(priority=25)
+//	public void test_EarringsTextIsDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		HP.EarringsTextIsDisplayOrNot(driver);
+//		
+//	}
+//	@Test(priority=26)
+//	public void test_HaramTextIsDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		HP.HaramTextIsDisplayOrNot(driver);
+//		
+//		
+//	}
+//	@Test(priority=27)
+//	public void test_JhumkaTextIsDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		HP.JhumkaTextIsDisplayOrNot(driver);
+//	}
+//	@Test(priority=28)
+//	public void test_ViewMoreTextIsDisplayOrNot() throws InterruptedException {
+//		HomePage HP = new HomePage(driver);
+//		HP.ViewMoreTextIsDisplayOrNot(driver);
+//	}
+//
+//	@Test(priority=29)
+//
+//public void test_CallBtnclikable() throws InterruptedException {
+//	HomePage HP = new HomePage(driver);
+//HP.callBtn(driver);
+//	
+//	
+//}
+	
 
+	
+//	@Test(priority=29)
+//
+//public void test_whatsappbtnclikable() throws InterruptedException {
+//	HomePage HP = new HomePage(driver);
+//HP.whatsAppBtn(driver);
+//	
+//	
+//}
+	
+	
+	
 }

@@ -67,36 +67,24 @@ public class GiftCardBuy {
 	@FindBy(xpath = "//button[normalize-space()='Gift Cards']")
 	public WebElement AccountGiftCardsButton;
 
-	@FindBy(xpath="//i[@class='fa-regular fa-circle-check']")
+	@FindBy(xpath = "//i[@class='fa-regular fa-circle-check']")
 	public WebElement RazorPayCheck;
-	
-	
-    @FindBy(xpath ="//h3[.='Contact details']/..//div//input[@placeholder='Mobile number']") private WebElement PhoneNumberEdt;
-    @FindBy(xpath ="//button[.='Continue']") private WebElement ContinueBtn;
 
-    
-    @FindBy(xpath ="//span[.='UPI']") private WebElement UpiLnk;
-    @FindBy(xpath ="//h3[.='UPI ID / Number']/..//input[@placeholder='example@okhdfcbank']") private WebElement UpiNameEdt;
-    @FindBy(xpath ="//button[.='Verify and Pay']") private WebElement VerifyAndPayBtn;
-	
-	
-    @FindBy(xpath = "//iframe[@class='razorpay-checkout-frame']")
-    public WebElement iframe;
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@FindBy(xpath = "//h3[.='Contact details']/..//div//input[@placeholder='Mobile number']")
+	private WebElement PhoneNumberEdt;
+	@FindBy(xpath = "//button[.='Continue']")
+	private WebElement ContinueBtn;
+
+	@FindBy(xpath = "//span[.='UPI']")
+	private WebElement UpiLnk;
+	@FindBy(xpath = "//h3[.='UPI ID / Number']/..//input[@placeholder='example@okhdfcbank']")
+	private WebElement UpiNameEdt;
+	@FindBy(xpath = "//button[.='Verify and Pay']")
+	private WebElement VerifyAndPayBtn;
+
+	@FindBy(xpath = "//iframe[@class='razorpay-checkout-frame']")
+	public WebElement iframe;
+
 	private WebDriverWait wait;
 
 	public GiftCardBuy(WebDriver driver) {
@@ -377,7 +365,7 @@ public class GiftCardBuy {
 	}
 
 	public void valuegetForRazorPay(WebDriver driver) throws InterruptedException {
-		
+
 		Thread.sleep(3000);
 
 		// Get the text value from the element
@@ -393,13 +381,9 @@ public class GiftCardBuy {
 		EnterAmount.sendKeys(totalAmount);
 
 		Thread.sleep(2000);
-		
-		
-		
+
 	}
-	
-	
-	
+
 	public void tableGiftCardgetDataBefore(WebDriver driver) throws InterruptedException {
 
 //        // Perform the action to buy the gift card
@@ -438,9 +422,6 @@ public class GiftCardBuy {
 
 	}
 
-	
-	
-	
 	public void BuyGiftcardWithRazorPay(WebDriver driver) throws InterruptedException {
 
 //		Thread.sleep(3000);
@@ -474,5 +455,5 @@ public class GiftCardBuy {
 		driver.navigate().refresh();
 
 	}
-	
+
 }

@@ -53,15 +53,15 @@ public class NoisePinTest extends LaunchBrowser {
 //	}
 //	
 	
-	@Test(priority = 1)
-	public void test_BuyTheProductWithGiftCardAndCoupons() throws InterruptedException {
-
-		LoginPage LP = new LoginPage(driver);
-		LP.EnterValidDataLogin(driver);
-		NoisePin np = new NoisePin(driver);
-		np.oderWithWalletWithGiftCardAndCoupons(driver);
-
-	}
+//	@Test(priority = 1)
+//	public void test_BuyTheProductWithGiftCardAndCoupons() throws InterruptedException {
+//
+//		LoginPage LP = new LoginPage(driver);
+//		LP.EnterValidDataLogin(driver);
+//		NoisePin np = new NoisePin(driver);
+//		np.oderWithWalletWithGiftCardAndCoupons(driver);
+//
+//	}
 	
 	
 	

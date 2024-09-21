@@ -3,10 +3,15 @@ package Com.HomeModule;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -31,95 +36,10 @@ public class HomePage {
 	@FindBy(xpath = "//p[normalize-space()='Cart']")
 	public WebElement CartButton;
 
-	// contact Us
-	@FindBy(xpath = "//p[normalize-space()='Contact Us']")
-	public WebElement ContactUsText;
-
-	@FindBy(xpath = "//a[normalize-space()='Call: 040-4013 7575']")
-	public WebElement callButton;
-
-	@FindBy(xpath = "(//a[contains(text(),'What’s App: 91600 06724')])[1]")
-	public WebElement WhatsApp;
-
-	@FindBy(xpath = "//a[normalize-space()='Email: info@goldsikka.com']")
-	public WebElement EmailButton;
-
-	// Follow Us
-	@FindBy(xpath = "//a[@href='https://www.facebook.com/matrika.goldsikka']//img[@class='social-icons']")
-	public WebElement FacebookButton;
-
-	@FindBy(xpath = "//img[@src='../../../assets/instagram.png']")
-	public WebElement instagramButton;
-
-	@FindBy(xpath = "//a[@href='https://www.youtube.com/@matrika_goldsikka']//img[@class='social-icons']")
-	public WebElement YoutubeButton;
-
-	@FindBy(xpath = "//a[@href='https://www.linkedin.com/company/goldsikkalimited/']//img[@class='social-icons']")
-	public WebElement linkendInButton;
-
-	@FindBy(xpath = "//img[@src='../../../assets/twitter-new-logo.png']")
-	public WebElement twitterButton;
-
-	@FindBy(xpath = "//a[@href='https://in.pinterest.com/Matrika_goldsikka/']//img[@class='social-icons']")
-	public WebElement printrestButton;
-
-	// Matrika Promises button xpath
-	@FindBy(xpath = "(//img[@class='guaranted-img'])[1]")
-	public WebElement AssuredLifeTimeMaintenance;
-
-	@FindBy(xpath = "(//img[@class='guaranted-img'])[2]")
-	public WebElement Purity24K;
-
-	@FindBy(xpath = "//section//section//div[3]//div[1]//img[1]")
-	public WebElement EasyExchange;
-
-	@FindBy(xpath = "//section//section//div[4]//div[1]//img[1]")
-	public WebElement yourJewelleryisInSured;
-
-	@FindBy(xpath = "//section//section//div[5]//div[1]//img[1]")
-	public WebElement Days14Return;
-
-	@FindBy(xpath = "//section//section//div[6]//div[1]//img[1]")
-	public WebElement GuaranteedBuyback;
-
-	@FindBy(xpath = "//section//section//div[7]//div[1]//img[1]")
-	public WebElement completeTransparency;
-
-	@FindBy(xpath = "//section//section//div[8]//div[1]//img[1]")
-	public WebElement Security;
-
 	@FindBy(xpath = "//span[contains(text(),'X-YUG Technologies')]")
 	public WebElement XYUGTechnologies;
 
 	// Matrika Promises Text xpath
-
-	@FindBy(xpath = "//p[@class='assured-life-para']")
-	public WebElement AssuredLifeText;
-
-	// Shop By Categories
-	@FindBy(xpath = "(//img[@class='w-75 rounded-circle catimg mb-2'])[6]")
-	public WebElement NosePin;
-
-	@FindBy(xpath = "(//img[@class='w-75 rounded-circle catimg mb-2'])[7]")
-	public WebElement ATM;
-
-	@FindBy(xpath = "(//img[@class='w-75 rounded-circle catimg mb-2'])[8]")
-	public WebElement Managalasutram;
-
-	@FindBy(xpath = "(//img[@class='w-75 rounded-circle catimg mb-2'])[9]")
-	public WebElement Lockets;
-
-	@FindBy(xpath = "(//img[@class='w-75 rounded-circle catimg mb-2'])[10]")
-	public WebElement Earrings;
-
-	@FindBy(xpath = "(//img[@class='w-75 rounded-circle catimg mb-2'])[11]")
-	public WebElement Haram;
-
-	@FindBy(xpath = "(//img[@class='w-75 rounded-circle catimg mb-2'])[12]")
-	public WebElement Jhumka;
-
-	@FindBy(xpath = "//button[normalize-space()='View all categories']")
-	public WebElement ViewMore;
 
 	// Live Price text
 
@@ -137,31 +57,6 @@ public class HomePage {
 
 	@FindBy(xpath = "//p[contains(text(), 'Matrika Promises')]")
 	public WebElement MatrikaPromises;
-
-	// Matrika Promises text xpath
-	@FindBy(xpath = "//p[@class='assured-para'][normalize-space()='Assured Lifetime Maintenance']")
-	public WebElement AssuredLifeTimeMaintenancetext;
-
-	@FindBy(xpath = "//p[@class='assured-para'][normalize-space()='Purity 24k(999 Purity)']")
-	public WebElement Purity24Ktext;
-
-	@FindBy(xpath = "//p[@class='assured-para'][normalize-space()='Easy Exchange']")
-	public WebElement EasyExchangetext;
-
-	@FindBy(xpath = "//p[@class='assured-para'][normalize-space()='Your Jewellery is Insured']")
-	public WebElement yourJewelleryisInSuredtext;
-
-	@FindBy(xpath = "//p[@class='assured-para'][normalize-space()='14 Days Return Policy']")
-	public WebElement Days14Returntext;
-
-	@FindBy(xpath = "//p[@class='assured-para'][normalize-space()='Guaranteed Buyback']")
-	public WebElement GuaranteedBuybacktext;
-
-	@FindBy(xpath = "//p[@class='assured-para'][normalize-space()='Complete Transparency']")
-	public WebElement completeTransparencytext;
-
-	@FindBy(xpath = "//p[@class='assured-para'][normalize-space()='Security']")
-	public WebElement Securitytext;
 
 	@FindBy(xpath = "//p[normalize-space()='Top Picks For You']")
 	public WebElement TopPicksForYoutext;
@@ -187,13 +82,35 @@ public class HomePage {
 	@FindBy(xpath = "//p[normalize-space()='Corporate Office']")
 	public WebElement CorporateOfficeText;
 
+	@FindBy(xpath = "//p[normalize-space()='Matrika Collections']")
+	public WebElement MatrikaCollectionsText;
+
 	public HomePage(WebDriver driver) {
 
 		PageFactory.initElements(driver, this);
 
 	}
 
-	public void MatrikaLogo() throws InterruptedException {
+	public void MatrikaCollectionsText(WebDriver driver) throws InterruptedException, IOException {
+		Thread.sleep(3000);
+		scrollToElementInCenter(MatrikaCollectionsText, driver);
+
+		Thread.sleep(1000);
+		boolean logoofMatrika = MatrikaCollectionsText.isDisplayed();
+
+		if (logoofMatrika == true) {
+			System.out.println("MatrikaCollections Text  is present on the Home page..!!");
+
+		} else {
+
+			System.out.println("MatrikaCollections Text is not present on the Home page..!!");
+
+		}
+
+	}
+
+	// Check Matrika Logo is display or not ..!
+	public void MatrikaLogo() throws InterruptedException, IOException {
 		Thread.sleep(3000);
 		boolean logoofMatrika = MatrikaLogo.isDisplayed();
 
@@ -206,14 +123,17 @@ public class HomePage {
 
 		}
 
+		takeElementScreenshot(MatrikaLogo, "MatrikaLogo");
+
 	}
 
-	public void GoldSikkaLogo() throws InterruptedException {
+	// Check Matrika Logo is display or not ..!
+	public void GoldSikkaLogo() throws InterruptedException, IOException {
 
 		Thread.sleep(3000);
-		boolean GoldSikkaLogo = MatrikaLogo.isDisplayed();
+		boolean logoofGoldSikka = GoldSikkaLogo.isDisplayed();
 
-		if (GoldSikkaLogo == true) {
+		if (logoofGoldSikka == true) {
 			System.out.println("GoldSikka logo is present on the Home page..!!");
 
 		} else {
@@ -222,8 +142,11 @@ public class HomePage {
 
 		}
 
+		takeElementScreenshot(GoldSikkaLogo, "GoldSikkaLogo");
+
 	}
 
+	// check AccountButton is display or not..!
 	public void AccountButton() throws InterruptedException {
 		Thread.sleep(3000);
 		boolean accountbutton = AccountButton.isDisplayed();
@@ -239,6 +162,7 @@ public class HomePage {
 
 	}
 
+	// check WishList Button is display or not..!
 	public void WishListButton() throws InterruptedException {
 		Thread.sleep(3000);
 		boolean wshlistbutton = WishListButton.isDisplayed();
@@ -254,6 +178,7 @@ public class HomePage {
 
 	}
 
+	// check CartButton is display or not..!
 	public void carttButton() throws InterruptedException {
 		Thread.sleep(3000);
 		boolean cartbutton = CartButton.isDisplayed();
@@ -269,270 +194,7 @@ public class HomePage {
 
 	}
 
-	public void AssuredLifeTimeMaintenance(WebDriver driver) throws InterruptedException {
-		MatrikaLogo.click();
-		Thread.sleep(2000);
-		scrollToElementInCenter(AssuredLifeTimeMaintenance, driver);
-		Thread.sleep(2000);
-		AssuredLifeTimeMaintenance.click();
-
-		AssuredLifeText.isDisplayed();
-
-		System.out.println("All context is display..!");
-
-		driver.navigate().back();
-
-	}
-
-	public void Purity24K(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		MatrikaLogo.click();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Purity24K, driver);
-		Thread.sleep(2000);
-		Purity24K.click();
-
-		System.out.println("All context is display..!");
-
-		driver.navigate().back();
-
-	}
-
-	public void EasyExchange(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		MatrikaLogo.click();
-		Thread.sleep(2000);
-		scrollToElementInCenter(EasyExchange, driver);
-		Thread.sleep(2000);
-		EasyExchange.click();
-
-		System.out.println("All context is display..!");
-
-		driver.navigate().back();
-
-	}
-
-	public void yourJewelleryisInSured(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		MatrikaLogo.click();
-		Thread.sleep(2000);
-		scrollToElementInCenter(yourJewelleryisInSured, driver);
-		Thread.sleep(2000);
-		yourJewelleryisInSured.click();
-
-		System.out.println("All context is display..!");
-
-		driver.navigate().back();
-
-	}
-
-	public void Days14Return(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		MatrikaLogo.click();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Days14Return, driver);
-		Thread.sleep(2000);
-		Days14Return.click();
-
-		System.out.println("All context is display..!");
-
-		driver.navigate().back();
-
-	}
-
-	public void GuaranteedBuyback(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		MatrikaLogo.click();
-		Thread.sleep(2000);
-		scrollToElementInCenter(GuaranteedBuyback, driver);
-		Thread.sleep(2000);
-		GuaranteedBuyback.click();
-
-		System.out.println("All context is display..!");
-
-		driver.navigate().back();
-
-	}
-
-	public void completeTransparency(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		MatrikaLogo.click();
-		Thread.sleep(2000);
-		scrollToElementInCenter(completeTransparency, driver);
-		Thread.sleep(2000);
-		completeTransparency.click();
-
-		System.out.println("All context is display..!");
-
-		driver.navigate().back();
-
-	}
-
-	public void Security(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		MatrikaLogo.click();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Security, driver);
-		Thread.sleep(2000);
-		Security.click();
-		System.out.println("All context is display..!");
-		driver.navigate().back();
-
-	}
-
-	public void FollowUsFacebookButton(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		scrollToElementInCenter(FacebookButton, driver);
-		Thread.sleep(2000);
-		String originalWindow = driver.getWindowHandle();
-		FacebookButton.click();
-		Thread.sleep(3000);
-		Set<String> allWindows = driver.getWindowHandles();
-		for (String windowHandle : allWindows) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		String currentURL = driver.getCurrentUrl();
-		String expectedURL = "https://www.facebook.com/matrika.goldsikka";
-		if (currentURL.equals(expectedURL)) {
-			System.out.println("Facebook link opened correctly.");
-		} else {
-			System.out.println("Facebook link did not open correctly.");
-		}
-		driver.close();
-		driver.switchTo().window(originalWindow);
-	}
-
-	public void FollowUsInstagramButton(WebDriver driver) throws InterruptedException {
-		scrollToElementInCenter(instagramButton, driver);
-		Thread.sleep(2000);
-
-		String originalWindow = driver.getWindowHandle();
-		instagramButton.click();
-		Thread.sleep(3000);
-		Set<String> allWindows = driver.getWindowHandles();
-		for (String windowHandle : allWindows) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		String currentURL = driver.getCurrentUrl();
-		String expectedURL = "https://www.instagram.com/matrika_goldsikka/";
-		if (currentURL.equals(expectedURL)) {
-			System.out.println("instagram link opened correctly.");
-		} else {
-			System.out.println("instagram link did not open correctly.");
-		}
-		driver.close();
-		driver.switchTo().window(originalWindow);
-	}
-
-	public void FollowUsYoutubeButton(WebDriver driver) throws InterruptedException {
-		scrollToElementInCenter(YoutubeButton, driver);
-		Thread.sleep(2000);
-		String originalWindow = driver.getWindowHandle();
-		YoutubeButton.click();
-		Thread.sleep(3000);
-		Set<String> allWindows = driver.getWindowHandles();
-		for (String windowHandle : allWindows) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		String currentURL = driver.getCurrentUrl();
-		String expectedURL = "https://www.youtube.com/@matrika_goldsikka";
-		if (currentURL.equals(expectedURL)) {
-			System.out.println("youtube link opened correctly.");
-		} else {
-			System.out.println("youtube link did not open correctly.");
-		}
-		driver.close();
-		driver.switchTo().window(originalWindow);
-
-	}
-
-	public void FollowUsLinkedinButton(WebDriver driver) throws InterruptedException {
-		scrollToElementInCenter(linkendInButton, driver);
-		Thread.sleep(2000);
-
-		String originalWindow = driver.getWindowHandle();
-		linkendInButton.click();
-		Thread.sleep(3000);
-		Set<String> allWindows = driver.getWindowHandles();
-		for (String windowHandle : allWindows) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		String currentURL = driver.getCurrentUrl();
-		String expectedURL = "https://www.linkedin.com/company/goldsikkalimited/";
-		if (currentURL.equals(expectedURL)) {
-			System.out.println("linkedin link opened correctly.");
-		} else {
-			System.out.println("linkedin link did not open correctly.");
-		}
-		driver.close();
-		driver.switchTo().window(originalWindow);
-
-	}
-
-	public void FollowUsTwitterButton(WebDriver driver) throws InterruptedException {
-		scrollToElementInCenter(twitterButton, driver);
-		Thread.sleep(2000);
-		String originalWindow = driver.getWindowHandle();
-		twitterButton.click();
-		Thread.sleep(3000);
-		Set<String> allWindows = driver.getWindowHandles();
-		for (String windowHandle : allWindows) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		String currentURL = driver.getCurrentUrl();
-		String expectedURL = "https://twitter.com/i/flow/login?redirect_after_login=%2Fmatrika_gs"; // Replace with the
-																									// actual Facebook
-																									// link
-		if (currentURL.equals(expectedURL)) {
-			System.out.println("twitter link opened correctly.");
-		} else {
-			System.out.println("twitter link did not open correctly.");
-		}
-		driver.close();
-		driver.switchTo().window(originalWindow);
-
-	}
-
-	public void FollowUspinterestButton(WebDriver driver) throws InterruptedException {
-		scrollToElementInCenter(printrestButton, driver);
-		Thread.sleep(2000);
-		String originalWindow = driver.getWindowHandle();
-		printrestButton.click();
-		Thread.sleep(3000);
-		Set<String> allWindows = driver.getWindowHandles();
-		for (String windowHandle : allWindows) {
-			if (!windowHandle.equals(originalWindow)) {
-				driver.switchTo().window(windowHandle);
-				break;
-			}
-		}
-		String currentURL = driver.getCurrentUrl();
-		String expectedURL = "https://in.pinterest.com/Matrika_goldsikka/"; // Replace with the actual Facebook link
-		if (currentURL.equals(expectedURL)) {
-			System.out.println("pinterest link opened correctly.");
-		} else {
-			System.out.println("pinterest link did not open correctly.");
-		}
-		driver.close();
-		driver.switchTo().window(originalWindow);
-
-	}
-
+	// X-yugTechnologies click
 	public void xyugTechnologies(WebDriver driver) throws InterruptedException, AWTException {
 		scrollToElementInCenter(XYUGTechnologies, driver);
 		Thread.sleep(2000);
@@ -558,126 +220,13 @@ public class HomePage {
 
 	}
 
-	// Contact Us
-	public void contactUsButton(WebDriver driver) throws InterruptedException {
-		Thread.sleep(2000);
-		scrollToElementInCenter(ContactUsText, driver);
-		ContactUsText.click();
-
-		String currentURL = driver.getCurrentUrl();
-		String expectedURL = "http://stg-ecom.goldbox.gold/contact-us";
-		if (currentURL.equals(expectedURL)) {
-			System.out.println("Contact-us link opened correctly.");
-		} else {
-			System.out.println("Contact-us link did not open correctly.");
-		}
+	public void emailBtn() {
 
 	}
 
-	// ShopByCategories
+	// Below all methods text is display or not..!
 
-	public void clickNosePins(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(NosePin, driver);
-		Thread.sleep(2000);
-		NosePin.click();
-		Thread.sleep(3000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-	}
-
-	public void clickATM(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(ATM, driver);
-		Thread.sleep(2000);
-
-		ATM.click();
-
-		Thread.sleep(3000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-	}
-
-	public void clickManagalasutram(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Managalasutram, driver);
-		Thread.sleep(2000);
-
-		Managalasutram.click();
-
-		Thread.sleep(3000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-	}
-
-	public void clickLockets(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Lockets, driver);
-		Thread.sleep(2000);
-
-		Lockets.click();
-
-		Thread.sleep(3000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-
-	}
-
-	public void clickEarrings(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Earrings, driver);
-		Thread.sleep(2000);
-
-		Earrings.click();
-		Thread.sleep(3000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-
-	}
-
-	public void clickHaram(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Haram, driver);
-		Thread.sleep(2000);
-		Haram.click();
-		Thread.sleep(3000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-	}
-
-	public void clickJhumka(WebDriver driver) throws InterruptedException {
-
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Jhumka, driver);
-		Thread.sleep(2000);
-		Jhumka.click();
-		Thread.sleep(3000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-	}
-
-	public void clickViewMore(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(ViewMore, driver);
-		Thread.sleep(2000);
-
-		ViewMore.click();
-		Thread.sleep(3000);
-		driver.navigate().back();
-		Thread.sleep(2000);
-
-	}
-
-	// Disply or not check methods
-
+	// check Gold22kPrice text is display or not
 	public void Gold22kPricetextDisplayOrNot() throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -693,6 +242,7 @@ public class HomePage {
 
 	}
 
+	// check Gold24kPrice text is display or not
 	public void Gold24kPricetextDisplayOrNot() throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -709,6 +259,7 @@ public class HomePage {
 
 	}
 
+	// check Silver text is display or not
 	public void silvertextDisplayOrNot() throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -724,6 +275,7 @@ public class HomePage {
 
 	}
 
+	// check live rate text is display or not
 	public void LiveRatetextDisplayOrNot() throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -739,6 +291,7 @@ public class HomePage {
 
 	}
 
+	// check MatrikaPromises Text is display or not ..!
 	public void MatrikaPromisesTexttDisplayOrNot(WebDriver driver) throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -755,134 +308,7 @@ public class HomePage {
 
 	}
 
-	public void AssuredLifeTimeMaintenancetextDisplayOrNot(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(AssuredLifeTimeMaintenancetext, driver);
-		boolean MatrikaPromisesText = AssuredLifeTimeMaintenancetext.isDisplayed();
-
-		if (MatrikaPromisesText == true) {
-			System.out.println("AssuredLifeTimeMaintenancetext is display");
-
-		} else {
-
-			System.out.println(" AssuredLifeTimeMaintenancetext is not display");
-		}
-
-	}
-
-	public void Purity24KtextDisplayOrNot(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Purity24Ktext, driver);
-		boolean MatrikaPromisesText = Purity24Ktext.isDisplayed();
-
-		if (MatrikaPromisesText == true) {
-			System.out.println("Purity24Ktext is display");
-
-		} else {
-
-			System.out.println(" Purity24Ktext is not display");
-		}
-
-	}
-
-	public void EasyExchangetextDisplayOrNot(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(EasyExchangetext, driver);
-		boolean MatrikaPromisesText = EasyExchangetext.isDisplayed();
-
-		if (MatrikaPromisesText == true) {
-			System.out.println("EasyExchangetext is display");
-
-		} else {
-
-			System.out.println(" EasyExchangetext is not display");
-		}
-
-	}
-
-	public void yourJewelleryisInSuredtextDisplayOrNot(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(yourJewelleryisInSuredtext, driver);
-		boolean MatrikaPromisesText = yourJewelleryisInSuredtext.isDisplayed();
-
-		if (MatrikaPromisesText == true) {
-			System.out.println("yourJewelleryisInSuredtext is display");
-
-		} else {
-
-			System.out.println(" yourJewelleryisInSuredtext is not display");
-		}
-
-	}
-
-	public void Days14ReturntextDisplayOrNot(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Days14Returntext, driver);
-		boolean MatrikaPromisesText = Days14Returntext.isDisplayed();
-
-		if (MatrikaPromisesText == true) {
-			System.out.println("Days14Returntext is display");
-
-		} else {
-
-			System.out.println(" Days14Returntext is not display");
-		}
-
-	}
-
-	public void GuaranteedBuybacktextDisplayOrNot(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(GuaranteedBuybacktext, driver);
-		boolean MatrikaPromisesText = GuaranteedBuybacktext.isDisplayed();
-
-		if (MatrikaPromisesText == true) {
-			System.out.println("GuaranteedBuybacktext is display");
-
-		} else {
-
-			System.out.println(" GuaranteedBuybacktext is not display");
-		}
-
-	}
-
-	public void completeTransparencytextDisplayOrNot(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(completeTransparencytext, driver);
-		boolean MatrikaPromisesText = completeTransparencytext.isDisplayed();
-
-		if (MatrikaPromisesText == true) {
-			System.out.println("completeTransparencytext is display");
-
-		} else {
-
-			System.out.println(" completeTransparencytext is not display");
-		}
-
-	}
-
-	public void SecuritytextDisplayOrNot(WebDriver driver) throws InterruptedException {
-		HomePageLogoMatrika();
-		Thread.sleep(2000);
-		scrollToElementInCenter(Securitytext, driver);
-		boolean MatrikaPromisesText = Securitytext.isDisplayed();
-
-		if (MatrikaPromisesText == true) {
-			System.out.println("Securitytext is display");
-
-		} else {
-
-			System.out.println(" Securitytext is not display");
-		}
-
-	}
-
+	// check TopPicksForYoutext is display or not ..!
 	public void TopPicksForYoutextDisplayOrNot(WebDriver driver) throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -899,6 +325,7 @@ public class HomePage {
 
 	}
 
+	// check SpecialGiftText is display or not ..!
 	public void SpecialGifttextDisplayOrNot(WebDriver driver) throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -915,6 +342,7 @@ public class HomePage {
 
 	}
 
+	// check DesirableOrnamentsText is display or not ..!
 	public void DesirableOrnamentstextDisplayOrNot(WebDriver driver) throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -931,6 +359,7 @@ public class HomePage {
 
 	}
 
+	// check NewArrials Text is display or not ..!
 	public void NewArrialsTextDisplayOrNot(WebDriver driver) throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -947,6 +376,7 @@ public class HomePage {
 
 	}
 
+	// check Festive & Brides Jewellery text is display or not..!
 	public void FestiveAndBridesJewelleryTextDisplayOrNot(WebDriver driver) throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -965,6 +395,7 @@ public class HomePage {
 
 	}
 
+	// check Deals of the Day text is display or not..!
 	public void DealsOfTheDayTextDisplayOrNot(WebDriver driver) throws InterruptedException {
 		HomePageLogoMatrika();
 		Thread.sleep(2000);
@@ -981,6 +412,7 @@ public class HomePage {
 
 	}
 
+	// check Jewellery Wholesale shop text is display or not ..!!
 	public void JewelleryWholesaleShopTextDisplayOrNot(WebDriver driver) throws InterruptedException {
 
 		HomePageLogoMatrika();
@@ -998,6 +430,7 @@ public class HomePage {
 
 	}
 
+	// Check CorporateOfficeText is display or not..!!
 	public void CorporateOfficeTextDisplayOrNot(WebDriver driver) throws InterruptedException {
 
 		HomePageLogoMatrika();
@@ -1015,16 +448,35 @@ public class HomePage {
 
 	}
 
-	public void scrollToElementInCenter(WebElement element, WebDriver driver) {
+	// Scroll the page till find the element
+	public void scrollToElementInCenter(WebElement element, WebDriver driver) throws InterruptedException {
+		Thread.sleep(1000);
+
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 
 		js.executeScript("arguments[0].scrollIntoView({block: 'center'});", element);
 	}
 
+	// click on the HomePage MatrikaLogo
 	public void HomePageLogoMatrika() throws InterruptedException {
 		Thread.sleep(1000);
 		MatrikaLogo.click();
 
+	}
+
+	// Method to take a screenshot of a specific element
+	public void takeElementScreenshot(WebElement element, String name) throws InterruptedException, IOException {
+		File file = element.getScreenshotAs(OutputType.FILE);
+		String screenshotDir = "C:\\Users\\admin\\git\\Matrika\\Matrika_Xyug\\ScreenShot";
+
+		File directory = new File(screenshotDir);
+		if (!directory.exists()) {
+			directory.mkdirs();
+		}
+		File targetFile = new File(screenshotDir + File.separator + name + ".png");
+		FileUtils.copyFile(file, targetFile);
+
+		System.out.println("Screenshot saved: " + targetFile.getAbsolutePath());
 	}
 
 }

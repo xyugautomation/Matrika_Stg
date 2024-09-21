@@ -23,12 +23,18 @@ public class NoisePin {
 	@FindBy(xpath = "//h2[normalize-space()='Nose Pins']")
 	public WebElement CatNosePin;
 
-	@FindBy(xpath = "(//p[contains(text(),'₹8,7')] | //p[contains(text(),'₹8,6')])[1]")
+	@FindBy(xpath = "//p[contains(text(),'Price: ₹3')]")
 	public WebElement ProductName;
 
+	@FindBy(xpath="//h2[normalize-space()='anklets']")
+	public WebElement anklets;
+	
+	@FindBy(xpath = "//a[normalize-space()='eree']")
+	public WebElement subcatanklets;
+	
 	@FindBy(xpath = "//a[normalize-space()='sub test']")
-	public WebElement subcat;
-
+	public WebElement subcatNosePin;
+	
 	@FindBy(xpath = "//a[normalize-space()='Buy Now']")
 	public WebElement BuyNowButton;
 
@@ -58,7 +64,7 @@ public class NoisePin {
 
 	@FindBy(xpath = "//input[@placeholder='Enter Amount']")
 	public WebElement EnterAmount;
-	@FindBy(xpath = "(//p[contains(text(),'₹8,7')] | //p[contains(text(),'₹8,6')])[1]")
+	@FindBy(xpath = "//p[contains(text(),'Price: ₹3')] | //p[contains(text(),'₹8,6')])[1]")
 	public WebElement productPrice;
 
 //	@FindBy(xpath = "(//p[contains(text(),'₹8,7')])[1] | (//p[contains(text(),'₹8,6')])[1] ")
@@ -112,24 +118,24 @@ public class NoisePin {
 		Actions actions = new Actions(driver);
 
 		// Wait for the category element to be visible
-		wait.until(ExpectedConditions.visibilityOf(CatNosePin));
+		wait.until(ExpectedConditions.visibilityOf(anklets));
 
 		// Move the mouse over the category
-		actions.moveToElement(CatNosePin).perform();
+		actions.moveToElement(anklets).perform();
 
 		// Scroll the subcategory into view to ensure it's visible and clickable
 		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView(true);", subcat);
+		js.executeScript("arguments[0].scrollIntoView(true);", subcatanklets);
 
 		// Wait until the subcategory is clickable
-		wait.until(ExpectedConditions.elementToBeClickable(subcat));
+		wait.until(ExpectedConditions.elementToBeClickable(subcatanklets));
 
 		try {
 			// Attempt to click on the subcategory
-			subcat.click();
+			subcatanklets.click();
 		} catch (ElementClickInterceptedException e) {
 			// Fallback to JavaScript click in case of interception
-			js.executeScript("arguments[0].click();", subcat);
+			js.executeScript("arguments[0].click();", subcatanklets);
 		}
 
 		// Wait for potential dynamic content changes
@@ -232,11 +238,13 @@ public class NoisePin {
 		mouseOverAndSelect(driver);
 		BuyNowButton(driver);
 		Thread.sleep(2000);
+		
 		String priceText = productPrice.getText();
 		Thread.sleep(2000);
 		String cleanPrice = priceText.replaceAll("[^0-9]", "");
 		Thread.sleep(2000);
 		String finalPrice = cleanPrice.substring(0, cleanPrice.length() - 2);
+		
 		EnterAmount.sendKeys(finalPrice);
 		Thread.sleep(2000);
 		placeorder.click();
@@ -295,20 +303,16 @@ public class NoisePin {
 	
 	
 	public void oderWithWalletWithGiftCardAndCoupons(WebDriver driver) throws InterruptedException {
-		
 		mouseOverAndSelect(driver);
 		BuyNowButton(driver);
 		Thread.sleep(2000);
 		GiftcardButton.click();
 		Thread.sleep(3000);
 		GiftCardApplyButton.click();
-		
 		Thread.sleep(3000);
 		CouponsButton.click();
-		
 		Thread.sleep(3000);
 		couponsApply.click();
-		
 		Thread.sleep(2000);
 		String priceText = AfterApplyGiftCardAmount.getText();
 		Thread.sleep(2000);
@@ -317,17 +321,9 @@ public class NoisePin {
 		String finalPrice = cleanPrice.substring(0, cleanPrice.length() - 2);
 		EnterAmount.sendKeys(finalPrice);
 		Thread.sleep(3000);
-
 		Thread.sleep(3000);
 		PlaceOrder.click();
-
-		
-		
 	}
-	
-	
-	
-	
-	
+
 	
 }

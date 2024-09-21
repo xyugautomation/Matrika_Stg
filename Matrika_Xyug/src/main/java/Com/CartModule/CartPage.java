@@ -12,7 +12,7 @@ public class CartPage {
 	public WebElement cartButton;
 	
 	
-	//@FindBy(xpath="")
+	
 	
 	
 	public CartPage(WebDriver driver) {

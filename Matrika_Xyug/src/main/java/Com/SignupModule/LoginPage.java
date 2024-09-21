@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 public class LoginPage {
-
+	
 	@FindBy(xpath = "//input[@formcontrolname='phonenumber']")
 	public WebElement PhoneNumber;
 
@@ -60,6 +60,10 @@ public class LoginPage {
 	@FindBy(xpath = "//p[normalize-space()='Account']")
 	public WebElement AccountButton;
 
+	@FindBy(xpath="//button[normalize-space()='Log In']")
+	public WebElement LoginButton;
+	
+	
 	@FindBy(xpath = "//button[normalize-space()='Log Out']")
 	public WebElement LogoutButton;
 
@@ -185,12 +189,14 @@ public class LoginPage {
 
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
-		    // Clear and enter the phone number
+		 wait.until(ExpectedConditions.visibilityOf(AccountButton)).click();
+		 wait.until(ExpectedConditions.visibilityOf(LoginButton)).click();
+	
 		    Thread.sleep(2000);
 		    PhoneNumber.clear();
 		    PhoneNumber.sendKeys("6309631698");
 
-		    // Click the continue button
+		   
 		    Thread.sleep(1000);
 		    ContinueButton.click();
 

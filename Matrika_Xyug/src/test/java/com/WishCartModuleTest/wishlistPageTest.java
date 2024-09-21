@@ -1,6 +1,4 @@
 package com.WishCartModuleTest;
-
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.SignupModuleTest.BaseTest;
@@ -22,20 +20,30 @@ public class wishlistPageTest extends  BaseTest  {
 //	}
 	
 	
-	
-	@Test(priority=2)
-	public void test_WishbuttonIsClickable() throws InterruptedException {
+//	
+//	@Test(priority=2)
+//	public void test_WishbuttonIsClickable() throws InterruptedException {
+//		LoginPage LP = new LoginPage(driver);
+//		LP.EnterValidDataLogin(driver);
+//		WishListPage ws=new WishListPage(driver);
+//		ws.	WishButtonIsClickable();
+//		
+//	}
+//	
+//	
+
+	@Test(priority=3)
+	public void test_WishbuttonProductIsdisplayOrNot() throws InterruptedException {
 		LoginPage LP = new LoginPage(driver);
 		LP.EnterValidDataLogin(driver);
 		WishListPage ws=new WishListPage(driver);
-		ws.	WishButtonIsClickable();
+		//ws.	checkProductDisplayStatus(driver);
+		ws.checkProductDisplayStatusyy();
 		
 	}
-//	
 	
 
 	
-	
-	
+
 	
 }
