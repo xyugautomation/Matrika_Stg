@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SignupModuleTest.SignupPageTest">
+      <class name="com.HomeModuleTest.HomePage_ShopByCategoriesTest">
         <methods>
-          <include name="SetBrowser"/>
-          <include name="test_Enter_valid_signup_Data"/>
-          <include name="testSignupButtonIsDisplayed"/>
+          <include name="setup"/>
+          <include name="test_ViewMoreTextIsDisplayOrNot"/>
+          <include name="test_JhumkaTextIsDisplayOrNot"/>
+          <include name="test_HaramTextIsDisplayOrNot"/>
         </methods>
-      </class> <!-- com.SignupModuleTest.SignupPageTest -->
+      </class> <!-- com.HomeModuleTest.HomePage_ShopByCategoriesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

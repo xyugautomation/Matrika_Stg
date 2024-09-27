@@ -343,7 +343,6 @@ public class GiftCardBuy {
 		// Get the text value from the element
 		String totalAmount = GetAmount.getText();
 		Thread.sleep(3000);
-
 		// Remove the last two characters from the totalAmount string
 		if (totalAmount.length() > 2) {
 			totalAmount = totalAmount.substring(0, totalAmount.length() - 2);
@@ -351,11 +350,9 @@ public class GiftCardBuy {
 
 		// Enter the modified amount into the input field
 		EnterAmount.sendKeys(totalAmount);
-
 		Thread.sleep(2000);
 		PayBtn.click();
 		Thread.sleep(2000);
-
 		Alert al = driver.switchTo().alert();
 		Thread.sleep(4000);
 		// Accept the alert
@@ -365,9 +362,7 @@ public class GiftCardBuy {
 	}
 
 	public void valuegetForRazorPay(WebDriver driver) throws InterruptedException {
-
 		Thread.sleep(3000);
-
 		// Get the text value from the element
 		String totalAmount = GetAmount.getText();
 		Thread.sleep(3000);
@@ -379,7 +374,6 @@ public class GiftCardBuy {
 
 		// Enter the modified amount into the input field
 		EnterAmount.sendKeys(totalAmount);
-
 		Thread.sleep(2000);
 
 	}

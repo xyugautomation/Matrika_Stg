@@ -123,14 +123,10 @@ public class LoginPage {
 	public void isTextDisplayToEnjoyASeamlessShoppingExperience() throws InterruptedException {
 		Thread.sleep(1000);
 		boolean ToEnjoyText = ToEnjoyASeamlessShoppingExperience.isDisplayed();
-
 		if (ToEnjoyText == true) {
-
 			System.out.println("To Enjoy A Seamless Shopping Experience text is display..!!");
-
 		} else {
 			System.out.println("To Enjoy A Seamless Shopping Experience text is not display..!!");
-
 		}
 
 	}
@@ -179,14 +175,11 @@ public class LoginPage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOf(AccountButton)).click();
 		wait.until(ExpectedConditions.visibilityOf(LoginButton)).click();
-
 		Thread.sleep(2000);
 		PhoneNumber.clear();
 		PhoneNumber.sendKeys("6309631698");
-
 		Thread.sleep(1000);
 		ContinueButton.click();
-
 		// Wait until OTP1 to OTP6 fields are visible
 		wait.until(ExpectedConditions.visibilityOf(OTP1));
 		wait.until(ExpectedConditions.visibilityOf(OTP2));
@@ -194,7 +187,6 @@ public class LoginPage {
 		wait.until(ExpectedConditions.visibilityOf(OTP4));
 		wait.until(ExpectedConditions.visibilityOf(OTP5));
 		wait.until(ExpectedConditions.visibilityOf(OTP6));
-
 		// Enter OTP values
 		OTP1.sendKeys("1");
 		OTP2.sendKeys("2");
@@ -233,7 +225,6 @@ public class LoginPage {
 		System.out.println("Cancel button is clickable.");
 		CancelButton.click();
 		System.out.println("The application shouldn't be logged out when you click the cancel button.");
-
 		Thread.sleep(2000);
 		AccountButton.click();
 		Thread.sleep(2000);
@@ -241,7 +232,6 @@ public class LoginPage {
 		Assert.assertTrue(isLogutButtonClickable(), "Logout button should be clickable");
 		System.out.println("Logout button is clickable.");
 		LogoutButton.click();
-
 		Thread.sleep(2000);
 		// Check if Yes button is clickable and print confirmation
 		Assert.assertTrue(isYesButtonClickable(), "Yes button should be clickable");
@@ -256,11 +246,9 @@ public class LoginPage {
 		Thread.sleep(2000);
 		ContinueButton.click();
 		Thread.sleep(2000);
-
 		if (UserNotFound.isDisplayed()) {
 			System.out.println(UserNotFound.getText());
 		}
-
 	}
 
 	public void AlreadyRegisterButDelete() throws InterruptedException {

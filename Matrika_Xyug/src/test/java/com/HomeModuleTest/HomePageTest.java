@@ -10,103 +10,47 @@ import Com.HomeModule.HomePage;
 
 public class HomePageTest extends BeforeLoginBase {
 
-//	@Test(priority = 1)
-//
-//	public void test_Matrkia_LogoIsDisplay() throws InterruptedException {
-//
-//		HomePage HP = new HomePage(driver);
-//
-//		HP.MatrikaLogo();
-//
-//	}
-//
-//	@Test(priority = 2)
-//
-//	public void test_GoldSikka_LogoIsDisplay() throws InterruptedException, IOException {
-//		HomePage HP = new HomePage(driver);
-//		HP.GoldSikkaLogo();
-//
-//	}
-//
-//	@Test(priority = 3)
-//
-//	public void test_AccountButtonIsDisplay() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.AccountButton();
-//
-//	}
-//
-//	@Test(priority = 4)
-//
-//	public void test_WishListButtonIsDisplay() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.WishListButton();
-//
-//	}
-//
-//	@Test(priority = 5)
-//
-//	public void test_carttButtonIsDisplay() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.carttButton();
-//
-//	}
-//
-//	@Test(priority = 6)
-//	public void test_AssuredLifeTimeMaintenance() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.AssuredLifeTimeMaintenance(driver);
-//
-//	}
-//
-//	@Test(priority = 7)
-//	public void Purity24K() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.Purity24K(driver);
-//
-//	}
-//
-//	@Test(priority = 8)
-//	public void EasyExchange() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.EasyExchange(driver);
-//
-//	}
-//
-//	@Test(priority = 9)
-//	public void yourJewelleryisInSured() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.yourJewelleryisInSured(driver);
-//
-//	}
-//
-//	@Test(priority = 10)
-//	public void Days14Return() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.Days14Return(driver);
-//
-//	}
-//
-//	@Test(priority = 11)
-//	public void GuaranteedBuyback() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.GuaranteedBuyback(driver);
-//
-//	}
-//
-//	@Test(priority = 12)
-//	public void completeTransparency() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.completeTransparency(driver);
-//
-//	}
-//
-//	@Test(priority = 13)
-//	public void Security() throws InterruptedException {
-//		HomePage HP = new HomePage(driver);
-//		HP.Security(driver);
-//
-//	}
+	@Test(priority = 1)
+
+	public void test_Matrkia_LogoIsDisplay() throws InterruptedException, IOException {
+
+		HomePage HP = new HomePage(driver);
+
+		HP.MatrikaLogo();
+
+	}
+
+	@Test(priority = 2)
+
+	public void test_GoldSikka_LogoIsDisplay() throws InterruptedException, IOException {
+		HomePage HP = new HomePage(driver);
+		HP.GoldSikkaLogo();
+
+	}
+
+	@Test(priority = 3)
+
+	public void test_AccountButtonIsDisplay() throws InterruptedException {
+		HomePage HP = new HomePage(driver);
+		HP.AccountButton();
+
+	}
+
+	@Test(priority = 4)
+
+	public void test_WishListButtonIsDisplay() throws InterruptedException {
+		HomePage HP = new HomePage(driver);
+		HP.WishListButton();
+
+	}
+
+	@Test(priority = 5)
+
+	public void test_carttButtonIsDisplay() throws InterruptedException {
+		HomePage HP = new HomePage(driver);
+		HP.carttButton();
+
+	}
 
 //	@Test(priority = 15)
 //	public void test_NavigationToContactUs() throws InterruptedException {
@@ -474,26 +418,6 @@ public class HomePageTest extends BeforeLoginBase {
 //		HP.ViewMoreTextIsDisplayOrNot(driver);
 //	}
 //
-//	@Test(priority=29)
-//
-//public void test_CallBtnclikable() throws InterruptedException {
-//	HomePage HP = new HomePage(driver);
-//HP.callBtn(driver);
-//	
-//	
-//}
-	
 
-	
-//	@Test(priority=29)
-//
-//public void test_whatsappbtnclikable() throws InterruptedException {
-//	HomePage HP = new HomePage(driver);
-//HP.whatsAppBtn(driver);
-//	
-//	
-//}
-	
-	
-	
+
 }

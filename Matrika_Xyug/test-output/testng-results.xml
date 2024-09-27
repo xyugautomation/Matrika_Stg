@@ -1,214 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-27T11:29:04 IST" name="Default suite" finished-at="2024-09-27T11:30:26 IST" duration-ms="81575">
+  <suite started-at="2024-09-27T16:27:00 IST" name="Default suite" finished-at="2024-09-27T16:28:03 IST" duration-ms="62804">
     <groups>
     </groups>
-    <test started-at="2024-09-27T11:29:04 IST" name="Default test" finished-at="2024-09-27T11:30:26 IST" duration-ms="81575">
-      <class name="com.SignupModuleTest.SignupPageTest">
-        <test-method is-config="true" signature="SetBrowser()[pri:0, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:04 IST" name="SetBrowser" finished-at="2024-09-27T11:29:15 IST" duration-ms="11101" status="PASS">
+    <test started-at="2024-09-27T16:27:00 IST" name="Default test" finished-at="2024-09-27T16:28:03 IST" duration-ms="62804">
+      <class name="com.HomeModuleTest.HomePage_MatrikaPromisesTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:26:41 IST" name="setup" finished-at="2024-09-27T16:27:00 IST" duration-ms="19386" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- SetBrowser -->
-        <test-method signature="testAccountButtonIsDisplayed()[pri:1, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:16 IST" name="testAccountButtonIsDisplayed" finished-at="2024-09-27T11:29:20 IST" duration-ms="4310" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="test_AssuredLifeTimeMaintenance()[pri:1, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:01 IST" name="test_AssuredLifeTimeMaintenance" finished-at="2024-09-27T16:27:10 IST" duration-ms="9184" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testAccountButtonIsDisplayed -->
-        <test-method signature="testSignupButtonIsDisplayed()[pri:2, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:20 IST" name="testSignupButtonIsDisplayed" finished-at="2024-09-27T11:29:24 IST" duration-ms="4121" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=129.0.6668.70)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b126b0255b35e6a9762d7061f181f1f1, clickElement {id=f.58DB9A873A6F7ABA05CF2C7185F19E0D.d.519EE7C44758E648401C1BECFF3E67BF.e.28}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59117}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59117/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b126b0255b35e6a9762d7061f181f1f1)] -> xpath: //button[normalize-space()='Sign Up']]
-Session ID: b126b0255b35e6a9762d7061f181f1f1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=129.0.6668.70)
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b126b0255b35e6a9762d7061f181f1f1, clickElement {id=f.58DB9A873A6F7ABA05CF2C7185F19E0D.d.519EE7C44758E648401C1BECFF3E67BF.e.28}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59117}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59117/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (b126b0255b35e6a9762d7061f181f1f1)] -> xpath: //button[normalize-space()='Sign Up']]
-Session ID: b126b0255b35e6a9762d7061f181f1f1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy11.click(Unknown Source)
-at Com.SignupModule.signupPage.isDisplaysignupButton(signupPage.java:164)
-at com.SignupModuleTest.SignupPageTest.testSignupButtonIsDisplayed(SignupPageTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+        </test-method> <!-- test_AssuredLifeTimeMaintenance -->
+        <test-method signature="Purity24K()[pri:2, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:10 IST" name="Purity24K" finished-at="2024-09-27T16:27:18 IST" duration-ms="8394" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSignupButtonIsDisplayed -->
-        <test-method signature="testSignupTextIsDisplayed()[pri:3, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:24 IST" name="testSignupTextIsDisplayed" finished-at="2024-09-27T11:29:26 IST" duration-ms="2039" status="PASS">
+        </test-method> <!-- Purity24K -->
+        <test-method signature="EasyExchange()[pri:3, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:18 IST" name="EasyExchange" finished-at="2024-09-27T16:27:26 IST" duration-ms="7397" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSignupTextIsDisplayed -->
-        <test-method signature="testEnterNameIsDisplayed()[pri:4, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:26 IST" name="testEnterNameIsDisplayed" finished-at="2024-09-27T11:29:30 IST" duration-ms="4182" status="PASS">
+        </test-method> <!-- EasyExchange -->
+        <test-method signature="yourJewelleryisInSured()[pri:4, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:26 IST" name="yourJewelleryisInSured" finished-at="2024-09-27T16:27:33 IST" duration-ms="7480" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnterNameIsDisplayed -->
-        <test-method signature="testEnterMailIDIsDisplayed()[pri:5, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:30 IST" name="testEnterMailIDIsDisplayed" finished-at="2024-09-27T11:29:34 IST" duration-ms="4225" status="PASS">
+        </test-method> <!-- yourJewelleryisInSured -->
+        <test-method signature="Days14Return()[pri:5, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:33 IST" name="Days14Return" finished-at="2024-09-27T16:27:41 IST" duration-ms="7628" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnterMailIDIsDisplayed -->
-        <test-method signature="testEnterMobileNumberIsDisplayed()[pri:6, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:34 IST" name="testEnterMobileNumberIsDisplayed" finished-at="2024-09-27T11:29:39 IST" duration-ms="4282" status="PASS">
+        </test-method> <!-- Days14Return -->
+        <test-method signature="GuaranteedBuyback()[pri:6, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:41 IST" name="GuaranteedBuyback" finished-at="2024-09-27T16:27:48 IST" duration-ms="7314" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnterMobileNumberIsDisplayed -->
-        <test-method signature="testEnterReferralCodeIsDisplayed()[pri:7, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:39 IST" name="testEnterReferralCodeIsDisplayed" finished-at="2024-09-27T11:29:43 IST" duration-ms="4207" status="PASS">
+        </test-method> <!-- GuaranteedBuyback -->
+        <test-method signature="completeTransparency()[pri:7, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:48 IST" name="completeTransparency" finished-at="2024-09-27T16:27:56 IST" duration-ms="7543" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testEnterReferralCodeIsDisplayed -->
-        <test-method signature="testClickCheckBoxIsDisplayed()[pri:8, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:43 IST" name="testClickCheckBoxIsDisplayed" finished-at="2024-09-27T11:29:47 IST" duration-ms="4306" status="PASS">
+        </test-method> <!-- completeTransparency -->
+        <test-method signature="Security()[pri:8, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:56 IST" name="Security" finished-at="2024-09-27T16:28:03 IST" duration-ms="7564" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testClickCheckBoxIsDisplayed -->
-        <test-method signature="testCreateAccountButtonIsDisplayed()[pri:9, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:47 IST" name="testCreateAccountButtonIsDisplayed" finished-at="2024-09-27T11:29:51 IST" duration-ms="4238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCreateAccountButtonIsDisplayed -->
-        <test-method signature="testLoginButtonIsDisplayed()[pri:10, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:51 IST" name="testLoginButtonIsDisplayed" finished-at="2024-09-27T11:29:56 IST" duration-ms="4248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLoginButtonIsDisplayed -->
-        <test-method signature="test_Enter_Invalid_signup_Data()[pri:11, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:29:56 IST" name="test_Enter_Invalid_signup_Data" finished-at="2024-09-27T11:30:11 IST" duration-ms="15224" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Enter_Invalid_signup_Data -->
-        <test-method signature="test_Enter_valid_signup_Data()[pri:12, instance:com.SignupModuleTest.SignupPageTest@451001e5]" started-at="2024-09-27T11:30:11 IST" name="test_Enter_valid_signup_Data" finished-at="2024-09-27T11:30:26 IST" duration-ms="15007" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@aria-label,'Mobile Number already exists , please register with new number.')]"}
-  (Session info: chrome=129.0.6668.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b126b0255b35e6a9762d7061f181f1f1, findElement {using=xpath, value=//div[contains(@aria-label,'Mobile Number already exists , please register with new number.')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59117}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59117/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b126b0255b35e6a9762d7061f181f1f1]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@aria-label,'Mobile Number already exists , please register with new number.')]"}
-  (Session info: chrome=129.0.6668.70)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.14.1', revision: '03f8ede370'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b126b0255b35e6a9762d7061f181f1f1, findElement {using=xpath, value=//div[contains(@aria-label,'Mobile Number already exists , please register with new number.')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.70, chrome: {chromedriverVersion: 129.0.6668.70 (df87d5cf12b1..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59117}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59117/devtoo..., se:cdpVersion: 129.0.6668.70, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: b126b0255b35e6a9762d7061f181f1f1
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy11.isDisplayed(Unknown Source)
-at Com.SignupModule.signupPage.EnterValidateData(signupPage.java:351)
-at com.SignupModuleTest.SignupPageTest.test_Enter_valid_signup_Data(SignupPageTest.java:83)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_Enter_valid_signup_Data -->
-      </class> <!-- com.SignupModuleTest.SignupPageTest -->
+        </test-method> <!-- Security -->
+      </class> <!-- com.HomeModuleTest.HomePage_MatrikaPromisesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

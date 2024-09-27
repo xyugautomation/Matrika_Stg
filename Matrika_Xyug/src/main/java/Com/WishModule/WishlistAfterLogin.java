@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 public class WishlistAfterLogin {
 
@@ -71,6 +72,26 @@ public class WishlistAfterLogin {
 			System.out.println("MoveCartButton is not display");
 
 		}
+	}
+//check wish list updated or not number 
+	public void checkWishlistNumberUpdated() throws InterruptedException {
+
+		String initialWishlistText = WishListButton.getText();
+		int initialWishlistNumber = Integer.parseInt(initialWishlistText.trim());
+
+//	        // Step 3: Perform an action (e.g., add an item to the wishlist)
+//	        WebElement addItemButton = driver.findElement(By.id("addItemButton")); // Use the correct locator
+//	        addItemButton.click();
+
+		// Optionally, add a wait if needed for the wishlist to update
+		Thread.sleep(2000); // Use WebDriverWait for a better approach
+
+		// Step 4: Get the updated wishlist number
+		String updatedWishlistText = WishListButton.getText();
+		int updatedWishlistNumber = Integer.parseInt(updatedWishlistText.trim());
+
+		// Step 5: Compare the numbers and assert
+		Assert.assertNotEquals(initialWishlistNumber, updatedWishlistNumber, "Wishlist number was not updated!");
 	}
 
 }
