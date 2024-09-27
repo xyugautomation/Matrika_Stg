@@ -2,7 +2,8 @@ package com.SignupModuleTest;
 
 import org.testng.annotations.Test;
 
-import Com.Base.LaunchBrowser;
+import com.Base.LaunchBrowser;
+
 import Com.SignupModule.signupPage;
 
 public class SignupPageTest extends LaunchBrowser {

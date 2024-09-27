@@ -96,6 +96,9 @@ public class signupPage {
 	@FindBy(xpath = "//div[normalize-space()='Please enter a valid email.']")
 	public WebElement vaidEmailID;
 
+	@FindBy(xpath = "//div[@aria-label='Login Successfully']")
+	public WebElement SuccessfullyMsg;
+
 	public signupPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 
@@ -123,14 +126,15 @@ public class signupPage {
 	public void isclickableAccountButton() throws InterruptedException {
 		Thread.sleep(2000);
 		boolean accountbutton = AccountButton.isDisplayed();
+		AccountButton.click();
 
 		if (accountbutton == true) {
 
-			System.out.println("AccountButton is display..!!");
+			System.out.println("AccountButton Is Clickable");
 
 		} else {
 
-			System.out.println("AccountButton is not display..!!");
+			System.out.println("AccountButton Is Not Clickable");
 
 		}
 		Thread.sleep(2000);
@@ -141,7 +145,7 @@ public class signupPage {
 
 	public void isDisplaysignupButton() throws InterruptedException {
 		Thread.sleep(2000);
-
+		AccountButton.click();
 		boolean signupbutton = signupButton.isDisplayed();
 
 		if (signupbutton == true) {
@@ -177,7 +181,9 @@ public class signupPage {
 
 	public void isDisplayEnterName() throws InterruptedException {
 		Thread.sleep(2000);
-
+		AccountButton.click();
+		Thread.sleep(2000);
+		signupButton.click();
 		boolean enterName = EnterName.isDisplayed();
 
 		if (enterName == true) {
@@ -194,7 +200,9 @@ public class signupPage {
 
 	public void isDisplayEnterMailID() throws InterruptedException {
 		Thread.sleep(2000);
-
+		AccountButton.click();
+		Thread.sleep(2000);
+		signupButton.click();
 		boolean entermailID = EnterMailID.isDisplayed();
 
 		if (entermailID == true) {
@@ -211,7 +219,9 @@ public class signupPage {
 
 	public void isDisplayEnterReferralCode() throws InterruptedException {
 		Thread.sleep(2000);
-
+		AccountButton.click();
+		Thread.sleep(2000);
+		signupButton.click();
 		boolean enterreferralCode = EnterReferralCode.isDisplayed();
 
 		if (enterreferralCode == true) {
@@ -228,7 +238,9 @@ public class signupPage {
 
 	public void isDisplayEnterMobileNumber() throws InterruptedException {
 		Thread.sleep(2000);
-
+		AccountButton.click();
+		Thread.sleep(2000);
+		signupButton.click();
 		boolean entermobileNumber = EnterMobileNumber.isDisplayed();
 
 		if (entermobileNumber == true) {
@@ -245,7 +257,9 @@ public class signupPage {
 
 	public void isDisplayClickCheckBox() throws InterruptedException {
 		Thread.sleep(2000);
-
+		AccountButton.click();
+		Thread.sleep(2000);
+		signupButton.click();
 		boolean clickcheckBox = ClickCheckBox.isDisplayed();
 
 		if (clickcheckBox == true) {
@@ -262,7 +276,9 @@ public class signupPage {
 
 	public void isDisplayCreateAccountButton() throws InterruptedException {
 		Thread.sleep(2000);
-
+		AccountButton.click();
+		Thread.sleep(2000);
+		signupButton.click();
 		boolean createaccountbutton = CreateAccountButton.isDisplayed();
 
 		if (createaccountbutton == true) {
@@ -279,7 +295,9 @@ public class signupPage {
 
 	public void isDisplayLoginButton() throws InterruptedException {
 		Thread.sleep(2000);
-
+		AccountButton.click();
+		Thread.sleep(2000);
+		signupButton.click();
 		boolean loginbutton = LoginButton.isDisplayed();
 
 		if (loginbutton == true) {
@@ -323,7 +341,7 @@ public class signupPage {
 		}
 		EnterMobileNumber.sendKeys("6309631698");
 		Thread.sleep(2000);
-		// ClickCheckBox.click();
+		ClickCheckBox.click();
 		CreateAccountButton.click();
 		Thread.sleep(2000);
 		// Check if already registered number is displayed
@@ -345,39 +363,13 @@ public class signupPage {
 			System.out.println("Please signup with a new mobile number.");
 
 		}
+		Thread.sleep(2000);
+		if (SuccessfullyMsg.isDisplayed()) {
+			System.out.println("Login Successfully...");
+		} else {
 
-//		
-//		Thread.sleep(2000);
-//		AccountButton.click();
-//		Thread.sleep(2000);
-//		signupButton.click();
-//		Thread.sleep(2000);
-//		
-//		EnterName.sendKeys("Shiv");
-//		Thread.sleep(2000);
-//		EnterMailID.sendKeys("Shiv.xyug@gmail.com");
-//		Thread.sleep(2000);
-//		EnterMobileNumber.sendKeys("6309631698");
-//		Thread.sleep(2000);
-//		ClickCheckBox.click();
-//		CreateAccountButton.click();
-//		Thread.sleep(2000);
-//		if (AlreadyRegisterNumber.isDisplayed()) {
-//			LoginButton.click();
-//			Thread.sleep(2000);
-//			EnterMobileNumberlogin.sendKeys("6309631698");
-//			continueButton.click();
-//			Thread.sleep(2000);
-//			OTP1.sendKeys("1");
-//			OTP2.sendKeys("2");
-//			OTP3.sendKeys("3");
-//			OTP4.sendKeys("4");
-//			OTP5.sendKeys("5");
-//			OTP6.sendKeys("6");
-//		} else {
-//			System.out.println("Please signup with new mobile number..");
-//
-//		}
+			System.out.println("Login is not successfully...");
+		}
 
 	}
 

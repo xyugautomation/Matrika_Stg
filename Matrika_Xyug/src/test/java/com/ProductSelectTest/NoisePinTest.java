@@ -2,9 +2,10 @@ package com.ProductSelectTest;
 
 import org.testng.annotations.Test;
 
-import Com.Base.LaunchBrowser;
-import Com.ProductSelect.NoisePin;
-import Com.SignupModule.LoginPage;
+import com.Base.LaunchBrowser;
+
+import Com.LoginModule.LoginPage;
+import Com.ProductSelectModule.NoisePin;
 
 public class NoisePinTest extends LaunchBrowser {
 //	@Test

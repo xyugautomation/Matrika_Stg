@@ -2,9 +2,10 @@ package com.GiftCardModuleTest;
 
 import org.testng.annotations.Test;
 
-import Com.Base.LaunchBrowser;
-import Com.GiftCart.GiftCardBuy;
-import Com.SignupModule.LoginPage;
+import com.Base.LaunchBrowser;
+
+import Com.GiftCartModule.GiftCardBuy;
+import Com.LoginModule.LoginPage;
 
 public class GiftcardBuyTest extends LaunchBrowser {
 
@@ -26,17 +27,4 @@ public class GiftcardBuyTest extends LaunchBrowser {
 
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

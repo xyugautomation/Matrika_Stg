@@ -396,16 +396,4 @@ public class HomePage_AccountBeforelogin {
 
 	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

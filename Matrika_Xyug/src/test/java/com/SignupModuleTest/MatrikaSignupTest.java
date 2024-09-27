@@ -3,10 +3,12 @@ package com.SignupModuleTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import Com.Base.AdminPanelPage;
-import Com.Base.SignupPage;
+import com.Base.BeforeLoginBase;
 
-public class MatrikaSignupTest extends  BaseTest {
+import Com.DummyBase.AdminPanelPage;
+import Com.DummyBase.SignupPage;
+
+public class MatrikaSignupTest extends  BeforeLoginBase {
 	
 	  @Test
 	    public void testMatrikaSignupWithOtp() {

@@ -2,8 +2,9 @@ package com.ProductSelectTest;
 
 import org.testng.annotations.Test;
 
-import Com.Base.LaunchBrowser;
-import Com.SelectCategory.Select11;
+import com.Base.LaunchBrowser;
+
+import Com.SelectCategoryModule.Select11;
 
 public class SelectCatTest extends LaunchBrowser {
 

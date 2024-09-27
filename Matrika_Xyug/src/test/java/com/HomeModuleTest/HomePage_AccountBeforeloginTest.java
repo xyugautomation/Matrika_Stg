@@ -2,11 +2,11 @@ package com.HomeModuleTest;
 
 import org.testng.annotations.Test;
 
-import com.SignupModuleTest.BaseTest;
+import com.Base.BeforeLoginBase;
 
 import Com.HomeModule.HomePage_AccountBeforelogin;
 
-public class HomePage_AccountBeforeloginTest extends BaseTest {
+public class HomePage_AccountBeforeloginTest extends BeforeLoginBase {
 
 //	@Test(priority = 1)
 //	public void Test_WishButtonDisplayOrNot() {

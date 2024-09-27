@@ -2,9 +2,10 @@ package com.SignupModuleTest;
 
 import org.testng.annotations.Test;
 
-import Com.Base.LaunchBrowser;
-import Com.SelectCategory.Select11;
-import Com.SignupModule.LoginPage;
+import com.Base.LaunchBrowser;
+
+import Com.LoginModule.LoginPage;
+import Com.SelectCategoryModule.Select11;
 
 public class SelectPageTest extends LaunchBrowser {
 

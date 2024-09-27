@@ -2,13 +2,13 @@ package com.HomeModuleTest;
 
 import org.testng.annotations.Test;
 
-import com.SignupModuleTest.BaseTest;
+import com.Base.BeforeLoginBase;
 
 import Com.HomeModule.HomePage_AccountAfterLogin;
-import Com.SignupModule.LoginPage;
+import Com.LoginModule.LoginPage;
 import Com.WishModule.WishListPage;
 
-public class HomePage_AccountAfterLoginTest extends BaseTest {
+public class HomePage_AccountAfterLoginTest extends BeforeLoginBase {
 
 //	
 //	@Test
@@ -58,7 +58,6 @@ public class HomePage_AccountAfterLoginTest extends BaseTest {
 //
 //	}
 
-	
 //	@Test(priority=1)
 //	public void Test_ProfileDetailsDisplayOrNot() throws InterruptedException {
 //		LoginPage LP = new LoginPage(driver);
@@ -130,7 +129,6 @@ public class HomePage_AccountAfterLoginTest extends BaseTest {
 //
 //	}
 
-
 //	@Test(priority = 7)
 //	public void Test_LogoutTextButtonDisplayDisplayNot() throws InterruptedException {
 //		LoginPage LP = new LoginPage(driver);
@@ -161,15 +159,4 @@ public class HomePage_AccountAfterLoginTest extends BaseTest {
 //
 //	}
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }

@@ -4,11 +4,11 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import com.SignupModuleTest.BaseTest;
+import com.Base.BeforeLoginBase;
 
 import Com.HomeModule.HomePage;
 
-public class HomePageTest extends BaseTest {
+public class HomePageTest extends BeforeLoginBase {
 
 //	@Test(priority = 1)
 //

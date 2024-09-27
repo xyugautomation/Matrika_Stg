@@ -27,6 +27,19 @@ public class WishListPage {
 	@FindBy(xpath = "//p[@class='Removeparagraph']")
 	public WebElement RemoveButton;
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public WishListPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 
@@ -78,11 +91,4 @@ public class WishListPage {
 
 	}
 
-	
-	
-	
-	
-	
-	
-	
 }
