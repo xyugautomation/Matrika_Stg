@@ -1,49 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-27T16:27:00 IST" name="Default suite" finished-at="2024-09-27T16:28:03 IST" duration-ms="62804">
+  <suite started-at="2024-10-04T15:21:53 IST" name="Default suite" finished-at="2024-10-04T15:22:19 IST" duration-ms="26024">
     <groups>
     </groups>
-    <test started-at="2024-09-27T16:27:00 IST" name="Default test" finished-at="2024-09-27T16:28:03 IST" duration-ms="62804">
-      <class name="com.HomeModuleTest.HomePage_MatrikaPromisesTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:26:41 IST" name="setup" finished-at="2024-09-27T16:27:00 IST" duration-ms="19386" status="PASS">
+    <test started-at="2024-10-04T15:21:53 IST" name="Default test" finished-at="2024-10-04T15:22:19 IST" duration-ms="26024">
+      <class name="com.FilterModuleTest.FilterNosePageTest">
+        <test-method is-config="true" signature="SetBrowser()[pri:0, instance:com.FilterModuleTest.FilterNosePageTest@305ffe9e]" started-at="2024-10-04T15:21:53 IST" name="SetBrowser" finished-at="2024-10-04T15:22:05 IST" duration-ms="11566" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="test_AssuredLifeTimeMaintenance()[pri:1, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:01 IST" name="test_AssuredLifeTimeMaintenance" finished-at="2024-09-27T16:27:10 IST" duration-ms="9184" status="PASS">
+        </test-method> <!-- SetBrowser -->
+        <test-method signature="test_GoldDropdownDisplaysNosepins()[pri:0, instance:com.FilterModuleTest.FilterNosePageTest@305ffe9e]" started-at="2024-10-04T15:22:05 IST" name="test_GoldDropdownDisplaysNosepins" description="Verify whether clicking on Gold Drop-down displays Gold (e.g., &#039;Nosepins&#039;)" finished-at="2024-10-04T15:22:19 IST" duration-ms="14401" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_AssuredLifeTimeMaintenance -->
-        <test-method signature="Purity24K()[pri:2, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:10 IST" name="Purity24K" finished-at="2024-09-27T16:27:18 IST" duration-ms="8394" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Purity24K -->
-        <test-method signature="EasyExchange()[pri:3, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:18 IST" name="EasyExchange" finished-at="2024-09-27T16:27:26 IST" duration-ms="7397" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EasyExchange -->
-        <test-method signature="yourJewelleryisInSured()[pri:4, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:26 IST" name="yourJewelleryisInSured" finished-at="2024-09-27T16:27:33 IST" duration-ms="7480" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- yourJewelleryisInSured -->
-        <test-method signature="Days14Return()[pri:5, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:33 IST" name="Days14Return" finished-at="2024-09-27T16:27:41 IST" duration-ms="7628" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Days14Return -->
-        <test-method signature="GuaranteedBuyback()[pri:6, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:41 IST" name="GuaranteedBuyback" finished-at="2024-09-27T16:27:48 IST" duration-ms="7314" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- GuaranteedBuyback -->
-        <test-method signature="completeTransparency()[pri:7, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:48 IST" name="completeTransparency" finished-at="2024-09-27T16:27:56 IST" duration-ms="7543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- completeTransparency -->
-        <test-method signature="Security()[pri:8, instance:com.HomeModuleTest.HomePage_MatrikaPromisesTest@451001e5]" started-at="2024-09-27T16:27:56 IST" name="Security" finished-at="2024-09-27T16:28:03 IST" duration-ms="7564" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Security -->
-      </class> <!-- com.HomeModuleTest.HomePage_MatrikaPromisesTest -->
+        </test-method> <!-- test_GoldDropdownDisplaysNosepins -->
+      </class> <!-- com.FilterModuleTest.FilterNosePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

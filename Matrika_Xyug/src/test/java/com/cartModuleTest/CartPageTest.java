@@ -1,9 +1,6 @@
 package com.cartModuleTest;
-
 import org.testng.annotations.Test;
-
 import com.Base.LaunchBrowser;
-
 import Com.Cart_Module.CartPageAfterLogin;
 import Com.LoginModule.LoginPage;
 
@@ -16,6 +13,7 @@ public class CartPageTest extends LaunchBrowser {
 		CartPageAfterLogin ch = new CartPageAfterLogin(driver);
 		ch.NavigateToCartPage(driver);
 		ch.NavigateTocheckOutPage(driver);
+
 	}
 
 	@Test(description = "Verify To Check TotalIteam Text Display or Not")
@@ -97,6 +95,8 @@ public class CartPageTest extends LaunchBrowser {
 		CartPageAfterLogin ch = new CartPageAfterLogin(driver);
 		ch.NavigateToCartPage(driver);
 		ch.CheckoutButtonDisplayOrNot(driver);
+	
+		
 	}
 
 }

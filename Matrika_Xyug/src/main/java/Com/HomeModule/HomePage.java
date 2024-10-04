@@ -468,7 +468,6 @@ public class HomePage {
 	public void takeElementScreenshot(WebElement element, String name) throws InterruptedException, IOException {
 		File file = element.getScreenshotAs(OutputType.FILE);
 		String screenshotDir = "C:\\Users\\admin\\git\\Matrika\\Matrika_Xyug\\ScreenShot";
-
 		File directory = new File(screenshotDir);
 		if (!directory.exists()) {
 			directory.mkdirs();

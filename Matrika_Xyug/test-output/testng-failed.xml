@@ -3,14 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.HomeModuleTest.HomePage_ShopByCategoriesTest">
+      <class name="com.FilterModuleTest.FilterNosePageTest">
         <methods>
-          <include name="setup"/>
-          <include name="test_ViewMoreTextIsDisplayOrNot"/>
-          <include name="test_JhumkaTextIsDisplayOrNot"/>
-          <include name="test_HaramTextIsDisplayOrNot"/>
+          <include name="SetBrowser"/>
+          <include name="test_FilterFunctionalityTypeIsClickable"/>
         </methods>
-      </class> <!-- com.HomeModuleTest.HomePage_ShopByCategoriesTest -->
+      </class> <!-- com.FilterModuleTest.FilterNosePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
