@@ -6,7 +6,7 @@
       <class name="com.FilterModuleTest.FilterNosePageTest">
         <methods>
           <include name="SetBrowser"/>
-          <include name="test_FilterFunctionalityTypeIsClickable"/>
+          <include name="test_WeightButtonDisplaysDropdownOptions"/>
         </methods>
       </class> <!-- com.FilterModuleTest.FilterNosePageTest -->
     </classes>
