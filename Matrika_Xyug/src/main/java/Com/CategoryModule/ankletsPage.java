@@ -62,10 +62,6 @@ public class ankletsPage {
 
 	}
 
-	
-	
-	
-	
 	public void FilterByText(WebDriver driver) throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		MouseOver(driver, Anklet);
@@ -100,6 +96,16 @@ public class ankletsPage {
 	public void WaitDriver(WebDriver driver, WebElement element, int time) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
 		wait.until(ExpectedConditions.visibilityOf(element)).click();
+
+	}
+
+	public void WaitDriverTest() {
+
+		try {
+
+		} catch (Exception e) {
+
+		}
 
 	}
 

@@ -196,9 +196,10 @@ public class CartPageAfterLogin {
 	}
 
 	public void checkCartAndAddToCart() throws InterruptedException {
-
+		
 		cartButton.click();
 		Thread.sleep(3000);
+		
 		if (NoProductsInCart.isDisplayed()) {
 			System.out.println("No products in the cart. Continue shopping.");
 

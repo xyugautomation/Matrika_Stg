@@ -3,6 +3,8 @@ package Com.Check_out_Module;
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.devtools.idealized.Javascript;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -97,6 +99,7 @@ public class checkoutpageAfterLogin {
 			System.out.println("Total text is displayed.");
 		} else {
 			System.out.println("Total text is not displayed.");
+
 		}
 	}
 
@@ -195,6 +198,8 @@ public class checkoutpageAfterLogin {
 		cartButton.click();
 
 	}
+
+	
 
 	public void NavigateToCheckOutPage(WebDriver driver) throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));

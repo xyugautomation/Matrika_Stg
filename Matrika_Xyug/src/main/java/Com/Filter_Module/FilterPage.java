@@ -782,6 +782,8 @@ public class FilterPage {
 		js.executeScript("window.scrollBy(0, 300);");
 	}
 
+	
+	
 	public void scrollToElement1(WebDriver driver) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0, 500);");

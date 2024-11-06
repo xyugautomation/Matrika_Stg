@@ -143,6 +143,7 @@ public class FilterNosePageTest extends LaunchBrowser {
 
 		LoginPage LP = new LoginPage(driver);
 		LP.EnterValidDataLogin(driver);
+		
 		FilterPage Fp = new FilterPage(driver);
 		Fp.TypeSilvercartButton24k(driver);
 
